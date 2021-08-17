@@ -1,5 +1,6 @@
 package com.wearstore.yibai.controller;
 
+import com.wearstore.yibai.util.ErrorI18N;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +28,7 @@ public class MainWeb {
     @GetMapping("test")
     public String test() {
         String port = env.getProperty("server.port");
+        log.info(ErrorI18N.get("hello.word"));
         return "Hello " + port;
     }
 
