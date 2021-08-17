@@ -6,3 +6,10 @@ server:
 spring:
   profiles:
     active: dev
+
+# logback.xml中有详细的日志配置
+logging:
+  config: classpath:config/logback.xml
+  #  方便Spring Boot Admin页面上实时查看日志
+  file:
+    path: logs/ws.log
