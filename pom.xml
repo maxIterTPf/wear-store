@@ -50,6 +50,13 @@
             <version>${swagger.version}</version>
         </dependency>
 
+        <!--静态资源映射-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+
 
 
     </dependencies>
