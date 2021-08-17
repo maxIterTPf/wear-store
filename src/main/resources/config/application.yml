@@ -1,0 +1,8 @@
+# 默认端口号
+server:
+  port: 40001
+
+#激活指定的profile
+spring:
+  profiles:
+    active: dev
