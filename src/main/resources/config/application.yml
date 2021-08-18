@@ -2,10 +2,10 @@
 server:
   port: 40001
 
-#激活指定的profile
+# 激活指定的profile
 spring:
   profiles:
-    active: dev
+    active: '@profileActive@'
 
 # logback.xml中有详细的日志配置
 logging:
@@ -13,3 +13,17 @@ logging:
   #  方便Spring Boot Admin页面上实时查看日志
   file:
     path: logs/ws.log
+
+# Filter 配置
+wear-store:
+  # 过滤器配置
+  filter:
+    # 请求路径Filter配置
+    request-path:
+      enabled: true
+      include-paths: /**
+      # 排除路径，多行字符串配置
+      exclude-paths: |
+        /applications/**,/actuator/**,/instances/**,/logfile,/sba-settings.js,/assets/img/favicon.png,
+        /swagger-ui.html,/swagger-resources/**,/webjars/springfox-swagger-ui/**,/v2/api-docs,
+        /druid/**,/favicon.ico

@@ -1,4 +1,4 @@
-package com.wearstore.yibai.interceptor;
+package com.wearstore.yibai.common.interceptor;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
