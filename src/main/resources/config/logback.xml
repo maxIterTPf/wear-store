@@ -2,8 +2,10 @@
 
 <configuration>
 
+    <!--定义日志文件的存储地址和前缀名 -->
     <property name="CONTEXT_NAME" value="ws"/>
     <property name="LOG_PATH" value="logs"/>
+
     <property name="MAX_FILE_SIZE" value="200MB"/>
     <property name="MAX_HISTORY" value="30"/>
 
@@ -36,9 +38,12 @@
         </encoder>
         <file>${LOG_PATH}/ws.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 每天一归档 -->
             <fileNamePattern>${LOG_PATH}/ws-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- 单个日志文件最多200MB, 30天的日志周期，最大不能超过20GB -->
             <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
             <maxHistory>${MAX_HISTORY}</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
         </rollingPolicy>
     </appender>
 

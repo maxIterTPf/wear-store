@@ -1,10 +1,12 @@
 package com.wearstore.yibai;
 
+import com.wearstore.yibai.util.PrintApplicationInfo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * wear-store 项目启动入口
@@ -16,7 +18,9 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 public class YiBaiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(YiBaiApplication.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(YiBaiApplication.class, args);
+        // 打印项目信息
+        PrintApplicationInfo.print(context);
     }
 
 }

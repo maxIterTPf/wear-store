@@ -18,6 +18,11 @@ spring:
     charset: UTF-8
     location: classpath:config/banner.txt
 
+wear-store:
+  # 是否启用ansi控制台输出有颜色的字体，dev环境建议开启，服务器环境设置为false
+  enable-ansi: false
+
+---
 # logback.xml中有详细的日志配置
 logging:
   config: classpath:config/logback.xml
@@ -38,3 +43,17 @@ wear-store:
         /applications/**,/actuator/**,/instances/**,/logfile,/sba-settings.js,/assets/img/favicon.png,
         /swagger-ui.html,/swagger-resources/**,/webjars/springfox-swagger-ui/**,/v2/api-docs,
         /druid/**,/favicon.ico
+
+
+# 自定义项目信息，Spring Boot Admin展示使用
+info:
+  project-groupId: '@project.groupId@'
+  project-artifactId: '@project.artifactId@'
+  project-name: '@project.name@'
+  project-finalName: '@project.build.finalName@'
+  project-author: ${swagger.contact.name}
+  project-description: '@project.description@'
+  project-sourceEncoding: '@project.build.sourceEncoding@'
+  project-spring-boot-version: '@spring-boot.version@'
+  project-mybatis-plus-version: '@mybatis-plus-boot-starter.version@'
+  project-version: '@project.version@'

@@ -1,3 +1,9 @@
 # 开发环境配置文件
 server:
   port: 40001
+  servlet:
+    context-path: /ws
+
+wear-store:
+  # 是否启用ansi控制台输出有颜色的字体，dev环境建议开启，服务器环境设置为false
+  enable-ansi: true
