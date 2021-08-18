@@ -7,6 +7,17 @@ spring:
   profiles:
     active: '@profileActive@'
 
+---
+spring:
+  application:
+    name: wear-store
+  jackson:
+    date-format: yyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  banner:
+    charset: UTF-8
+    location: classpath:config/banner.txt
+
 # logback.xml中有详细的日志配置
 logging:
   config: classpath:config/logback.xml
