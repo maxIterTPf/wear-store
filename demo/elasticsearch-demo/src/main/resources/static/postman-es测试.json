@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "c2a87e0a-391a-41b3-b77a-9c5910702b69",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.es 添加索引",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/es/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"es",
+						"add"
+					]
+				},
+				"description": "1.es 测试：添加索引"
+			},
+			"response": []
+		},
+		{
+			"name": "2.es 查询测试",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/es/searchData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"es",
+						"searchData"
+					]
+				},
+				"description": "2.es 测试：查询"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

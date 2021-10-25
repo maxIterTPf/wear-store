@@ -1,0 +1,12 @@
+server:
+  port: 8002  # 端口
+
+spring:
+  application:
+    name: elasticsearch-demo  # 应用名
+
+# es配置
+elasticsearch:
+  user:
+  password:
+  host: 127.0.0.1:9200 # 集群ip配置以","符号区分
