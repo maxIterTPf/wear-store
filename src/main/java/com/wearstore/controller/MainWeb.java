@@ -1,6 +1,6 @@
 package com.wearstore.controller;
 
-import com.wearstore.util.ErrorI18N;
+import com.wearstore.util.I18N;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +28,7 @@ public class MainWeb {
     @GetMapping("test")
     public String test() {
         String port = env.getProperty("server.port");
-        log.info(ErrorI18N.get("hello.word"));
+        log.info(I18N.get("hello.word"));
         return "Hello " + port;
     }
 

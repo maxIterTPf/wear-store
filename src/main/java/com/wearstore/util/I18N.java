@@ -12,13 +12,13 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
-public class ErrorI18N {
+public class I18N {
 
     private static MessageSource messageSource;
 
     @Autowired
-    public ErrorI18N(MessageSource messageSource) {
-        ErrorI18N.messageSource = messageSource;
+    public I18N(MessageSource messageSource) {
+        I18N.messageSource = messageSource;
     }
 
     /**

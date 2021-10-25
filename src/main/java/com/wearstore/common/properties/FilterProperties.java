@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
  */
 @Data
 @ConfigurationProperties(prefix = "wear-store.filter")
-public class WearStoreFilterProperties {
+public class FilterProperties {
 
     /**
      * 请求路径Filter配置

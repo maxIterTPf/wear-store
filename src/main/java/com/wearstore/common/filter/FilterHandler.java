@@ -1,6 +1,6 @@
 package com.wearstore.common.filter;
 
-import com.wearstore.common.properties.WearStoreFilterProperties;
+import com.wearstore.common.properties.FilterProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.util.AntPathMatcher;
@@ -30,7 +30,7 @@ public class FilterHandler implements Filter {
 
     private boolean isEnabled;
 
-    public FilterHandler(WearStoreFilterProperties.FilterConfig filterConfig) {
+    public FilterHandler(FilterProperties.FilterConfig filterConfig) {
         isEnabled = filterConfig.isEnabled();
         excludePaths = filterConfig.getExcludePaths();
         log.debug("isEnabled:" + isEnabled);
