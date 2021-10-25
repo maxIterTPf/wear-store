@@ -1,4 +1,4 @@
-package com.wearstore.yibai.common.interceptor;
+package com.wearstore.common.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.lang.Nullable;
@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * 拦截器是依赖于SpringMVC的，需要有mvc的依赖。
+ * 拦截器只能拦截action请求。不包括静态资源[css，js...]。
+ * 在拦截器的生命周期中，可以多次被调用。
+ *
  * @author PF.Tian
  * @since 2021/08/18
  */
@@ -19,6 +23,7 @@ public class InterceptorOperation implements HandlerInterceptor {
 
     /**
      * preHandle是请求执行前执行的
+     * 有返回值Boolean类型，true：表示放行
      *
      * @param request
      * @param response

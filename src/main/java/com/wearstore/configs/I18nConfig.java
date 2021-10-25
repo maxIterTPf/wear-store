@@ -1,4 +1,4 @@
-package com.wearstore.yibai.configs;
+package com.wearstore.configs;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

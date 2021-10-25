@@ -39,7 +39,7 @@
         <file>${LOG_PATH}/ws.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!-- 每天一归档 -->
-            <fileNamePattern>${LOG_PATH}/ws-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_PATH}/ws_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- 单个日志文件最多200MB, 30天的日志周期，最大不能超过20GB -->
             <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
             <maxHistory>${MAX_HISTORY}</maxHistory>

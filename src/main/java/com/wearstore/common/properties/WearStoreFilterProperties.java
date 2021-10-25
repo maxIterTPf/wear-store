@@ -1,4 +1,4 @@
-package com.wearstore.yibai.common.properties;
+package com.wearstore.common.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

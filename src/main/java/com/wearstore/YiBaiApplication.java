@@ -1,6 +1,6 @@
-package com.wearstore.yibai;
+package com.wearstore;
 
-import com.wearstore.yibai.util.PrintApplicationInfo;
+import com.wearstore.util.PrintApplicationInfo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;

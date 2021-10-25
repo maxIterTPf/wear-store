@@ -1,4 +1,4 @@
-package com.wearstore.yibai.configs;
+package com.wearstore.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
-public class Swagger2 {
+public class Swagger2Config {
     /**
      * 创建API应用
      * apiInfo() 增加API相关信息
@@ -43,9 +43,9 @@ public class Swagger2 {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("wear-store")
-                .description("spring 练习项目")
+                .description("spring boot Demo")
                 .termsOfServiceUrl("http//localhost:40001")
-                .contact("PengFei.Tian")
+                .contact("PF.Tian")
                 .version("1.0")
                 .build();
     }

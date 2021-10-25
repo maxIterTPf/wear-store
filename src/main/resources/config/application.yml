@@ -1,8 +1,8 @@
-# Ä¬ÈÏ¶Ë¿ÚºÅ
+# é»˜è®¤ç«¯å£å·
 server:
   port: 40001
 
-# ¼¤»îÖ¸¶¨µÄprofile
+# æ¿€æ´»æŒ‡å®šçš„profile
 spring:
   profiles:
     active: '@profileActive@'
@@ -19,33 +19,33 @@ spring:
     location: classpath:config/banner.txt
 
 wear-store:
-  # ÊÇ·ñÆôÓÃansi¿ØÖÆÌ¨Êä³öÓĞÑÕÉ«µÄ×ÖÌå£¬dev»·¾³½¨Òé¿ªÆô£¬·şÎñÆ÷»·¾³ÉèÖÃÎªfalse
+  # æ˜¯å¦å¯ç”¨ansiæ§åˆ¶å°è¾“å‡ºæœ‰é¢œè‰²çš„å­—ä½“ï¼Œdevç¯å¢ƒå»ºè®®å¼€å¯ï¼ŒæœåŠ¡å™¨ç¯å¢ƒè®¾ç½®ä¸ºfalse
   enable-ansi: false
 
 ---
-# logback.xmlÖĞÓĞÏêÏ¸µÄÈÕÖ¾ÅäÖÃ
+# logback.xmlä¸­æœ‰è¯¦ç»†çš„æ—¥å¿—é…ç½®
 logging:
   config: classpath:config/logback.xml
-  #  ·½±ãSpring Boot AdminÒ³ÃæÉÏÊµÊ±²é¿´ÈÕÖ¾
+  #  æ–¹ä¾¿Spring Boot Adminé¡µé¢ä¸Šå®æ—¶æŸ¥çœ‹æ—¥å¿—
   file:
     path: logs/ws.log
 
-# Filter ÅäÖÃ
+# Filter é…ç½®
 wear-store:
-  # ¹ıÂËÆ÷ÅäÖÃ
+  # è¿‡æ»¤å™¨é…ç½®
   filter:
-    # ÇëÇóÂ·¾¶FilterÅäÖÃ
+    # è¯·æ±‚è·¯å¾„Filteré…ç½®
     request-path:
       enabled: true
       include-paths: /**
-      # ÅÅ³ıÂ·¾¶£¬¶àĞĞ×Ö·û´®ÅäÖÃ
+      # æ’é™¤è·¯å¾„ï¼Œå¤šè¡Œå­—ç¬¦ä¸²é…ç½®
       exclude-paths: |
         /applications/**,/actuator/**,/instances/**,/logfile,/sba-settings.js,/assets/img/favicon.png,
         /swagger-ui.html,/swagger-resources/**,/webjars/springfox-swagger-ui/**,/v2/api-docs,
         /druid/**,/favicon.ico
 
 
-# ×Ô¶¨ÒåÏîÄ¿ĞÅÏ¢£¬Spring Boot AdminÕ¹Ê¾Ê¹ÓÃ
+# è‡ªå®šä¹‰é¡¹ç›®ä¿¡æ¯ï¼ŒSpring Boot Adminå±•ç¤ºä½¿ç”¨
 info:
   project-groupId: '@project.groupId@'
   project-artifactId: '@project.artifactId@'

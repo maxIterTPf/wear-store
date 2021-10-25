@@ -1,4 +1,4 @@
-package com.wearstore.yibai.util;
+package com.wearstore.util;
 
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;

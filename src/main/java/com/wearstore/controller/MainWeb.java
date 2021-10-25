@@ -1,6 +1,6 @@
-package com.wearstore.yibai.controller;
+package com.wearstore.controller;
 
-import com.wearstore.yibai.util.ErrorI18N;
+import com.wearstore.util.ErrorI18N;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
