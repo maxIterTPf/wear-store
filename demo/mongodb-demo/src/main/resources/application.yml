@@ -1,0 +1,8 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: spring-boot-mongodb
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/test # 没有设置用户名和密码
