@@ -1,7 +1,7 @@
 package com.wearstore.controller;
 
 import com.wearstore.util.ErrorI18N;
-import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("web")
-@Api(value = "MainWeb", tags = "web页面")
+@ApiModel(value = "MainWeb页面", description = "测试页面")
 public class MainWeb {
 
     // 注入对象
     @Autowired
     private Environment env;
 
-    @ApiOperation("test")
+    @ApiOperation("测试接口")
     @GetMapping("test")
     public String test() {
         String port = env.getProperty("server.port");
